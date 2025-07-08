@@ -1,8 +1,12 @@
 import React from "react";
 import logo from "../../public/icon/logo.svg";
 import circlelogo from "../../public/icon/circle-logo.svg";
+import { Link, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation()
+
   return (
     <div className="fixed z-99 flex flex-row w-full justify-between px-5 h-[11vh] items-center bg-bg-secondary">
       <div className="flex flex-row items-center gap-3">
@@ -13,12 +17,12 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex flex-row gap-8 justify-center items-center">
-        <a href="" className="font-poppins font-semibold text-[14px] text-third">Home</a>
-        <a href="" className="font-poppins font-regular text-[14px] text-third">About</a>
-        <a href="" className="font-poppins font-regular text-[14px] text-third">Projects</a>
-        <a href="" className="font-poppins font-regular text-[14px] text-third">Achievements</a>
-        <a href="" className="font-poppins font-regular text-[14px] text-third">Experiences</a>
-        <a href="" className="font-poppins font-regular text-[14px] text-third">Contact</a>
+        <Link to="/"className={location.pathname == "/" ? 'font-poppins font-semibold text-[14px] text-third' : 'font-poppins font-regular text-[14px] text-third'}>Home</Link>
+        <Link to="/about" className={location.pathname == "/about" ? 'font-poppins font-semibold text-[14px] text-third' : 'font-poppins font-regular text-[14px] text-third'}>About</Link>
+        <Link to="/about" className={location.pathname == "/projects" ? 'font-poppins font-semibold text-[14px] text-third' : 'font-poppins font-regular text-[14px] text-third'}>Projects</Link>
+        <Link to="/about" className={location.pathname == "/achievements" ? 'font-poppins font-semibold text-[14px] text-third' : 'font-poppins font-regular text-[14px] text-third'}>Achievements</Link>
+        <Link to="/about" className={location.pathname == "/experiences" ? 'font-poppins font-semibold text-[14px] text-third' : 'font-poppins font-regular text-[14px] text-third'}>Experiences</Link>
+        <Link to="/about" className={location.pathname == "/contact" ? 'font-poppins font-semibold text-[14px] text-third' : 'font-poppins font-regular text-[14px] text-third'}>Contact</Link>
       </div>
       <a href="" className="font-poppins font-medium text-[13px] px-5 py-2.5 bg-linear-third text-white rounded-full">Let’s Collaborate</a>
     </div>

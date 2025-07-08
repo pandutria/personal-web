@@ -2,6 +2,7 @@
 
 @theme default {
   --font-poppins: "Poppins", sans-serif;
+  --font-header: "Bebas Neue", sans-serif;
   --font-logo: 'Poetsen One', sans-serif;
   --color-primary: #009ECC;
   --color-secondary: #0052B8;
@@ -9,7 +10,7 @@
   --color-fourth: #0F172A;
   --color-bg-primary: #F1F5F9;
   --color-bg-secondary: #F8F8F8;
-  --color-linear-text: linear-gradient(to right, #0052B8 0%, #009ECC 100%);
+  --color-linear-text: linear-gradient(to right, #0F172A 2%, #0052B8  30%, #009ECC 100%);
   --color-linear-primary: linear-gradient(to bottom, #009ECC 0%, #0052B8 100%);
   --color-linear-secondary: linear-gradient(135deg, #009ecc 25%, #0052b8 100%);
   --color-linear-third: linear-gradient(to right, #0052B8 0%, #009ECC 100%);
