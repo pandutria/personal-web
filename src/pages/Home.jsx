@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import Navbar from '../components/Navbar'
 import logo from "../../public/icon/logo.svg";
 import plus from "../../public/icon/plus.png";
+import image from "../../public/pic/image.png";
 
 
 const Home = () => {
@@ -12,7 +13,7 @@ const Home = () => {
   return (
     <div className='flex flex-col relative'>
       <Navbar/>
-      <div className='flex flex-row w-full h-screen bg-bg-primary items-center justify-center pt-[11vh]'>
+      <div className='flex flex-row w-full h-screen bg-bg-primary items-center justify-center pt-[11vh] gap-20'>
         <div className='flex flex-col justify-center'>
           <div className='flex flex-row items-center gap-1'>
             <h1 className='font-poppins font-normal text-[28px] text-third'>Hello, Pandu is here!</h1>
@@ -29,6 +30,7 @@ const Home = () => {
             <p className='font-poppins font-normal text-third text-[15px] w-75 pl-2'>From small experiments to real-world solutions that truly make impact.</p>
           </div>
         </div>
+        <img src={image} className='w-80' alt="" />
       </div>
     </div>
   )
