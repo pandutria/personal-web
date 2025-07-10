@@ -8,7 +8,7 @@ const Navbar = () => {
   const location = useLocation()
 
   return (
-    <div className="fixed z-99 flex flex-row w-full justify-between px-10 h-[11vh] items-center bg-bg-secondary">
+    <div className="fixed z-99 flex flex-row w-full justify-between px-10 h-[10vh] items-center bg-bg-secondary">
       <div className="flex flex-row items-center gap-3">
         <img src={circlelogo} className='w-11 h-auto object-contain' alt="" />
         <div className="flex flex-col ">
