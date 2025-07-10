@@ -18,7 +18,7 @@ const Navbar = () => {
       </div>
       <div className="flex flex-row gap-8 justify-center items-center">
         <Link to="/"className={location.pathname == "/" ? 'font-poppins font-semibold text-[14px] text-third' : 'font-poppins font-regular text-[14px] text-third'}>Home</Link>
-        <Link to="/about" className={location.pathname == "/about" ? 'font-poppins font-semibold text-[14px] text-third' : 'font-poppins font-regular text-[14px] text-third'}>About</Link>
+        {/* <Link to="/about" className={location.pathname == "/about" ? 'font-poppins font-semibold text-[14px] text-third' : 'font-poppins font-regular text-[14px] text-third'}>About</Link> */}
         <Link to="/projects" className={location.pathname == "/projects" ? 'font-poppins font-semibold text-[14px] text-third' : 'font-poppins font-regular text-[14px] text-third'}>Projects</Link>
         <Link to="/about" className={location.pathname == "/achievements" ? 'font-poppins font-semibold text-[14px] text-third' : 'font-poppins font-regular text-[14px] text-third'}>Achievements</Link>
         <Link to="/about" className={location.pathname == "/experiences" ? 'font-poppins font-semibold text-[14px] text-third' : 'font-poppins font-regular text-[14px] text-third'}>Experiences</Link>

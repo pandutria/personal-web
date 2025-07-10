@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { useEffect } from "react";
-import image from "../../public/pic/image.png";
+import image from "../../public/pic/test.png";
 
 const About = () => {
   useEffect(() => {

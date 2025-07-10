@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import Navbar from '../components/Navbar'
 import logo from "../../public/icon/logo.svg";
 import plus from "../../public/icon/plus.png";
-import image from "../../public/pic/image.png";
+import image from "../../public/pic/me.png";
 
 
 const Home = () => {
