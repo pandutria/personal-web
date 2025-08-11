@@ -20,7 +20,7 @@ const Projects = () => {
       <div className='flex flex-col w-full h-auto bg-bg-primary pt-[14vh] pb-[8vh] items-center'>
         <h1 className="font-header font-normal text-linear-text text-[90px]">PROJECTS</h1>
         <p className="font-poppins font-thin text-third -mt-6 text-[17px]">Turning coffee into <span className='text-secondary font-semibold'>code</span>. Here's the <span className='text-secondary font-semibold'>result</span>.</p>
-        <div className='flex flex-row flex-wrap gap-8 pt-20 w-300 justify-center'>
+        <div className='flex flex-row flex-wrap gap-8 pt-15 w-300 justify-center'>
           {projects.map((project, index) =>  <div key={index} className='flex flex-col w-90 bg-white rounded-[10px] overflow-hidden shadow-md hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-2'>
                 <img src={project.image} className='w-full h-50 object-cover' alt="" />
                 <div className='flex flex-col px-4 py-6 w-full'>
