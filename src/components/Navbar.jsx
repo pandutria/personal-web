@@ -3,21 +3,23 @@ import logo from "../../public/icon/logo.svg";
 import circlelogo from "../../public/icon/circle-logo.svg";
 import { Link, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import burger from "../../public/icon/burger.png";
 
 const Navbar = () => {
   const location = useLocation();
 
   return (
     <div>
-      <section className="fixed z-99 flex w-full justify-center px-10 h-[10vh] bg-bg-secondary">
-        <div className="container flex flex-row w-full justify-between px-5 items-center">
+      <section className="fixed z-99 flex w-full justify-center lg:h-[10vh] md:h-[8vh] h-[9vh] bg-bg-secondary">
+        <div className="container flex flex-row lg:w-290 md:w-full w-full lg:px-0 md:px-5 px-5 justify-between items-center">
           <div className="flex flex-row items-center gap-3">
             <img
               src={circlelogo}
-              className="w-11 h-auto object-contain"
+              className="lg:w-11 md:w-11 w-7 h-auto object-contain"
               alt=""
             />
-            <div className="flex flex-col ">
+            <h1 className="lg:hidden md:hidden flex font-poppins font-bold text-[15px] text-linear-text">Pandu Tria Adyatama</h1>
+            <div className="lg:flex md:flex hidden flex-col">
               <h1 className="font-poppins font-bold text-[14px] text-linear-text">
                 Pandu
               </h1>
@@ -26,7 +28,7 @@ const Navbar = () => {
               </h1>
             </div>
           </div>
-          <div className="flex flex-row gap-8 justify-center items-center">
+          <div className="lg:flex md:hidden hidden flex-row gap-8 justify-center items-center">
             <Link
               to="/"
               className={
@@ -78,13 +80,14 @@ const Navbar = () => {
             >
               Contact
             </Link>
-          </div>
-          <a
+              <a
             href=""
             className="font-poppins font-medium text-[13px] px-5 py-2.5 bg-linear-third text-white rounded-full"
           >
             Let’s Collaborate
           </a>
+          </div>
+          <img src={burger} className="lg:hidden md:flex flex lg:w-5 md:w-6 w-5 h-auto object-contain" alt="" />
         </div>
       </section>
     </div>

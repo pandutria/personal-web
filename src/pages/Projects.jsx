@@ -17,25 +17,25 @@ const Projects = () => {
   return (
     <div className="flex flex-col">
       <Navbar />
-      <section className="flex w-full bg-bg-primary justify-center pt-[10vh]  pb-[8vh]">
-        <div className="container flex flex-col w-290 h-auto bg-bg-primary items-center">
-          <h1 className="font-header font-normal text-linear-text text-[90px]">
+      <section className="flex w-full bg-bg-primary justify-center lg:pt-[11vh] md:pt-[10vh] pt-[11vh] lg:pb-[8vh] md:pb-[6vh] pb-[5vh]">
+        <div className="container flex flex-col lg:w-290 md:w-full w-full lg:px-0 md:px-5 px-5 h-auto bg-bg-primary items-center">
+          <h1 data-aos="fade-down" className="font-header font-normal text-linear-text lg:text-[90px] md:text-[90px] text-[65px]">
             PROJECTS
           </h1>
-          <p className="font-poppins font-thin text-third -mt-6 text-[17px]">
+          <p data-aos="fade-down" className="font-poppins font-thin text-third lg:-mt-6 md:-mt-6 -mt-4 lg:text-[17px] md:text-[17px] text-[14px] lg:text-start md:text-center text-center">
             Turning coffee into{" "}
             <span className="text-secondary font-semibold">code</span>. Here's
             the <span className="text-secondary font-semibold">result</span>.
           </p>
-          <div className="flex flex-row flex-wrap gap-y-7 pt-15 w-full justify-between">
+          <div data-aos="zoom-in-up" className="flex flex-row flex-wrap lg:gap-y-7 md:gap-y-7 gap-y-6 lg:pt-15 md:pt-15 pt-9 w-full justify-between">
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="flex flex-col w-90 bg-white rounded-[10px] overflow-hidden shadow-md hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-2"
+                className="flex flex-col lg:w-90 md:w-85 w-full bg-white rounded-[10px] overflow-hidden shadow-md hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-2"
               >
                 <img
                   src={project.image}
-                  className="w-full h-68 object-cover"
+                  className="w-full h-auto object-contain"
                   alt=""
                 />
                 <div className="flex flex-col px-4 py-6 w-full">
