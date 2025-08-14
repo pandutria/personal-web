@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className='flex flex-col relative'>
       <Navbar/>
-      <section className='flex w-full lg:h-screen md:h-screen h-screen bg-bg-primary justify-center lg:pt-[11vh] md:pt-[3vh] pt-[3vh]'>
+      <section className='flex w-full lg:h-screen md:h-screen h-screen bg-bg-primary justify-center lg:pt-[11vh] md:pt-[3vh] pt-[0vh]'>
         <div className='container flex lg:flex-row md:flex-col-reverse flex-col-reverse lg:w-290 md:w-full w-full lg:px-0 md:px-5 px-5 bg-bg-primary items-center lg:justify-between md:justify-center justify-center lg:gap-0 md:gap-10 gap-0'>
         <div data-aos="fade-right" className='flex flex-col justify-center lg:items-start md:items-center lg:w-170 md:w-full'>
           <div className='flex flex-row items-center gap-1'>

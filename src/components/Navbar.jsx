@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../public/icon/logo.svg";
 import circlelogo from "../../public/icon/circle-logo.svg";
 import { Link, useNavigate } from "react-router-dom";
@@ -7,6 +7,8 @@ import burger from "../../public/icon/burger.png";
 
 const Navbar = () => {
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState('')
 
   return (
     <div>
@@ -28,7 +30,7 @@ const Navbar = () => {
               </h1>
             </div>
           </div>
-          <div className="lg:flex md:hidden hidden flex-row gap-8 justify-center items-center">
+          <div className={`${isOpen ? 'translate-x-0' : 'translate-x-full'} lg:translate-x-0 md:translate-x-0 transition-transform duration-500 ease-in-out lg:relative md:absolute absolute lg:hidden md:flex flex lg:flex-row md:flex-col flex-col lg:h-auto md:h-screen h-screen lg:px-0 md:px-5 px-3 bg-bg-secondary gap-8 justify-center items-center right-0 top-0`}>
             <Link
               to="/"
               className={
@@ -87,7 +89,7 @@ const Navbar = () => {
             Let’s Collaborate
           </a>
           </div>
-          <img src={burger} className="lg:hidden md:flex flex lg:w-5 md:w-6 w-5 h-auto object-contain" alt="" />
+          <img src={burger} onClick={() => setIsOpen(!isOpen)} className={`${isOpen ? 'rotate-90' : 'rotate-0'} lg:hidden md:flex flex lg:w-5 md:w-6 w-5 h-auto cursor-pointer transition-transform duration-300 object-contain z-100`} alt="" />
         </div>
       </section>
     </div>
