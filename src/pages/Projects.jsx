@@ -17,7 +17,7 @@ const Projects = () => {
   return (
     <div className="flex flex-col">
       <Navbar />
-      <section className="flex w-full bg-bg-primary justify-center lg:pt-[11vh] md:pt-[10vh] pt-[11vh] lg:pb-[8vh] md:pb-[6vh] pb-[5vh]">
+      <section className="flex w-full bg-bg-primary justify-center lg:pt-[11vh] md:pt-[10vh] pt-[10vh] lg:pb-[8vh] md:pb-[6vh] pb-[5vh]">
         <div className="container flex flex-col lg:w-290 md:w-full w-full lg:px-0 md:px-5 px-5 h-auto bg-bg-primary items-center">
           <h1 data-aos="fade-down" className="font-header font-normal text-linear-text lg:text-[90px] md:text-[90px] text-[65px]">
             PROJECTS

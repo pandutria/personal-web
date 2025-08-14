@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <section className="fixed z-99 flex w-full justify-center lg:h-[10vh] md:h-[8vh] h-[9vh] bg-bg-secondary">
+      <section className="fixed z-99 flex w-full justify-center lg:h-[10vh] md:h-[8vh] h-[8vh] bg-bg-secondary">
         <div className="container flex flex-row lg:w-290 md:w-full w-full lg:px-0 md:px-5 px-5 justify-between items-center">
           <div className="flex flex-row items-center gap-3">
             <img
